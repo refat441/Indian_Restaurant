@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="F:/Server/htdocs/PHP/Indian-Night/Resturent_Menu.css">
+</head>
+<body>
+    <!--banner img-->
+<div class="banner-img ">
+    <div class="banner-text">
+        <img src="f:/html/img/indian night/cardamom-logo.png" alt="" class="img-fluid">
+        <p style="font-family:Brush Script MT, Brush Script Std, cursive;" class="display-4">Restaurant Menu</p>
+    </div>
+</div>
+
+<!--Resturent Menu-->
+<div style="background-color: black; color: white;">
+    <div class="pt-5 pb-4 text-center">
+        <p style="font-family:Brush Script MT, Brush Script Std, cursive;" class="display-4">Restaurant Menu</p>
+        <p style="font-family:Bradley Hand, cursive; " >Gluten free dishes available, just please ask our waiting staff</p>
+    </div>
+
+    <!--menu tab-->
+    <div class="tab mb-5 col-sm-12">
+        <button class="tablinks" onclick="openCity(event, 'All-Courses')" id="defaultOpen">All Courses 
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" style="color:  rgb(199, 174, 35);" fill="currentColor" class="bi bi-star ml-3" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                </svg> 
+            </span>
+        </button>
+
+        <button class="tablinks" onclick="openCity(event, 'Starters')">Starters
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" style="color:  rgb(199, 174, 35);" fill="currentColor" class="bi bi-star ml-3" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                </svg> 
+            </span>
+        </button>
+
+        <button class="tablinks" onclick="openCity(event, 'Main_Courses')">Main Courses
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" style="color:  rgb(199, 174, 35);" fill="currentColor" class="bi bi-star ml-3" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                </svg> 
+            </span>
+        </button>
+
+        <button class="tablinks" onclick="openCity(event, 'Curries')">Curries
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" style="color:  rgb(199, 174, 35);" fill="currentColor" class="bi bi-star ml-3" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                </svg> 
+            </span>
+        </button>
+        
+    </div>
+</div>
+
+
+    <!--main menu--> 
+<div class="mt-5" style="font-family: Arial, Helvetica, sans-serif;"> 
+    <div id="All-Courses" class="tabcontent"> <!-- All Course-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Onion Bhaji (V) <span class="food-value">£4.25</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Sliced onion mixed with herbs, spices, garam flour and served with minted yoghurt sauce.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Samosa <span class="food-value">£4.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Lamb or vegetables spiced pastry case, served with special salad.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Mix starter <span class="food-value">£5.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Chicken tikka, chatga, prawn, samosa and kufta kebab served with salad.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Kalamari <span class="food-value">£5.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Fresh squid spiced with Bengal Masala served with tomato chilli jam</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Sag Roll V <span class="food-value">£4.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Spinach, cheese and mash potatoes covered with breadcrumbs and deep fried.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;">Chaat - Puri (Chicken/Prawn/King Prawn) <span class="food-value">£5.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Cooked with cucumber, fresh tomatoes, tangy chaat masala sauce and served on crispy fried puries.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Salmon Tikka<span class="food-value">£5.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">England's most loved. fresh salmon marinated with Indian spices and cooked in the tandoori.</p>
+                </div>
+                
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Mixed Kebab<span class="food-value">£5.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Chicken tikka, lamb tikka, shami kebab and onion bhaji.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Lamb Shank Butter Masala<span class="badge badge-danger" style="font-size: 10px;">New</span> <span class="food-value">£12.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Cooked in a specially ,Made sauce infused with butter and cashew nut.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> KanKal <span class="food-value">£12.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Chicken / Lamb (Chef - recommended) an authentic dish different blend of spices and herbs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div id="Starters" class="tabcontent">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Onion Bhaji (V) <span class="food-value">£4.25</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Sliced onion mixed with herbs, spices, garam flour and served with minted yoghurt sauce.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Samosa <span class="food-value">£4.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Lamb or vegetables spiced pastry case, served with special salad.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Mix starter <span class="food-value">£5.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Chicken tikka, chatga, prawn, samosa and kufta kebab served with salad.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div style="font-size: 20px;"> Kalamari <span class="food-value">£5.95</span></div>
+                    <div class="dote-line"></div>
+                    <p style="color:rgb(81, 81, 85)">Fresh squid spiced with Bengal Masala served with tomato chilli jam</p>
+                </div>  
+            </div>
+          </div>
+    </div>
+        
+    <div id="Main_Courses" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="Curries" class="tabcontent">
+        <h3>tabcontent</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
