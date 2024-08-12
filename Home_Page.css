@@ -40,7 +40,7 @@
   }
    @media (pointer: coarse) and (hover: none) {
     header {
-      background-image: url("F:/html/img/indian night/1.jpg"); /* The image used */
+      background-image: url("Indian_Restaurant/1.jpg"); /* The image used */
       background-color: #e9e9e9; /* Used if the image is unavailable */
       height: 500px; /* You must set a specified height */
       background-position: center; /* Center the image */
@@ -64,7 +64,7 @@
 /* Luxurious Experience */
 
   .Luxurious-img {
-  background-image: url("F:/html/img/indian night/2.jpg"); /* The image used */
+  background-image: url("Indian_Restaurant/2.jpg"); /* The image used */
   background-color: #e9e9e9; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
   background-position: center; /* Center the image */
